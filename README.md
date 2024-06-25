@@ -39,10 +39,10 @@ Published as a conference paper at RSS'2024.
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#example">Example</a></li>
+    <li><a href="#examples">Examples</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgement">Acknowledgement</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
     <li><a href="#citation">Citation</a></li>
   </ol>
 </details>
@@ -58,8 +58,18 @@ Click to watch our spotlight video:
 [![Watch the video](misc/cover.jpeg)](https://haiminhu.org/wp-content/uploads/2024/06/rss_klgame.mp4)
 
 
-## Example
-
+## Examples
+### Policy blending: car racing
+We provide a car racing example in the [Notebook](https://github.com/SafeRoboticsLab/KLGame/blob/main/racing/example.ipynb) to showcase the *policy blending* feature with KL Game.
+This Notebook comprises three sections, each dedicated to a closed-loop simulation using a different method: basic KL Game, multi-modal KL Game, and multi-modal reference policy.
+<br />
+<p align="center">
+  <a href="https://github.com/SafeRoboticsLab/KLGame/blob/main/racing/example.ipynb">
+    <img src="misc/racing.png" alt="racing" width="1000">
+  </a>
+  <p align="center">
+  </p>
+</p>
 
 
 <!-- LICENSE -->
@@ -71,14 +81,14 @@ Distributed under the BSD 3-Clause License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
+- Justin Lidard - [@justinlidard](https://x.com/justinlidard) - jlidard@princeton.edu
 - Haimin Hu - [@HaiminHu](https://x.com/HaiminHu) - haiminh@princeton.edu
-- Justin Lidard - [@justinlidard](https://x.com/justinlidard) - https://jlidard.github.io/
 
 
-## Acknowledgement
+## Acknowledgements
 This research has been supported in part by an NSF Graduate Research Fellowship.
 This work is partially supported by Toyota Research Institute (TRI).
-It, however, reflects solely the opinions and conclusions of its authors and not TRI or any other Toyota entity
+It, however, reflects solely the opinions and conclusions of its authors and not TRI or any other Toyota entity.
 
 <!-- PAPER -->
 ## Citation
