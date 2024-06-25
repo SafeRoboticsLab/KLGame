@@ -1,0 +1,91 @@
+# VEHICLE
+WIDTH: 2.
+LENGTH: 5.
+MASS : 1760  # weight [kg]
+WHEELBASE: 2.9  # wheelbase [m]
+DIM_X: 4
+DIM_U: 2
+
+# TRACK
+TRACK_OFFSET: 0.0
+LOOP: True
+
+# COST PARAM
+W_OVERTAKE: 0.
+W_STAYBACK: 0.
+W_INNER_EGO: 1.
+W_OUTER_EGO: 0.
+W_BLOCK: 30.
+W_INNER_ADO: 0.
+W_OUTER_ADO: 0.
+
+W_VEL: 2.
+W_CONTOUR: 50.
+W_THETA: 1.
+W_ACCEL: 1.
+W_DELTA: 1.
+EGO_REF_VEL_SCALE: 0.7
+ADO_REF_VEL_SCALE: 0.7
+
+# OPINION-RELATED COST PARAM
+OVERTAKE_THRES: 20.    # measured in m
+STAYBACK_THRES: -5.    # measured in m
+BLOCK_THRES_UB: 20.    # measured in m
+BLOCK_THRES_LB: -15.    # measured in m
+YIELD_THRES_UB: 0.    # measured in m
+YIELD_THRES_LB: -50.    # measured in m
+
+# CONSTRAINT
+V_MIN: 0.
+V_MAX: 40.
+A_MIN: -15.
+A_MAX: 10.
+DELTA_MIN: -0.25
+DELTA_MAX: 0.25
+ALAT_MIN: -5.
+ALAT_MAX: 5.
+ROAD_THR: 1.0
+PENALTY_SCALE: 1.2
+
+# SOFT CONSTRAINT COST PARAM
+Q1_V: 0.4
+Q2_V: 2.
+Q1_ROAD: 1.
+Q2_ROAD: 2.
+Q1_LAT: 0.4
+Q2_LAT: 1.
+Q1_PROX: 1.
+Q2_PROX: 2.
+BARRIER_THR: 10.
+BARRIER_THR_ROAD: 15.
+BARRIER_THR_LAT: 7.5
+BARRIER_THR_PROX: 10.
+
+# GAME SOLVER
+REG_EGO: 50.  # KL regularization weight
+REG_ADO: 0.  # Set to 0.
+N: 21
+T: 2.
+MAX_ITER: 15
+MAX_ITER_RECEDING: 150
+TOLERANCE_RATE: 0.005
+OUT_FOLDER: experiments/inverse_game
+LS_NUM: 15  # max linesearch steps
+
+# INVERSE GAME TRAINING
+RANDOM_SEED: 35
+N_BATCH: 20  # horizon length of each batch trajectory
+MAX_EPOCH: 40  # max epoches
+LAMBDA_CTRL: 0.5   # control weight in the imitation loss
+LEARNING_RATE: 0.0001
+WEIGHT_DECAY: 0.0001
+NORMALIZE_NN_INPUTS: True
+BATCH_SIZE: 16
+TEST_SIZE: 0.05
+SAVE_FREQ: 1
+
+# MLP HYPERPARAM
+TURN_WGT_EGO: 1.
+TURN_WGT_ADO: 1.
+SEP_LB: 0.  # separation threshold of the interaction range
+SEP_UB: 40.
