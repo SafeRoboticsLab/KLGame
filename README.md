@@ -60,7 +60,7 @@ Click to watch our spotlight video:
 
 ## Examples
 ### Policy blending: car racing
-We provide a car racing example in the [Notebook](https://github.com/SafeRoboticsLab/KLGame/blob/main/racing/example.ipynb) to showcase the *policy blending* feature with KL Game.
+We provide a car racing example in the [Notebook](https://github.com/SafeRoboticsLab/KLGame/blob/main/racing/example.ipynb) to showcase the *policy blending* feature of KL Game.
 This Notebook comprises three sections, each dedicated to a closed-loop simulation using a different method: basic KL Game, multi-modal KL Game, and multi-modal reference policy.
 <br />
 <p align="center">
